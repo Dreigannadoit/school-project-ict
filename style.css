@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-size: 'Roboto', sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+.bg{
+	position: absolute;
+ 	background: url(Bg/BG2.jpg)no-repeat;
+ 	height: 100vh;
+ 	width: 100%;
+ 	background-size: cover;
+ 	background-position: center;
+ 	background-attachment: fixed;
+ 	filter: blur(15px);
+}
+
+.controls{
+    position: absolute;
+    z-index: 9999999;
+    display: flex;
+    align-content: center;
+    bottom: 10%;
+    left: 40%;
+    /*animation: blink1 0.5s infinite;*/
+}
+
+/*@keyframes blink1{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}*/
+
+.controls h3{
+    font-size: 20px;
+}
+
+.controls button{
+    text-decoration: none;
+    background: transparent;
+    border: none;
+}
+
+.controls button:checked{
+    text-decoration: none;
+    background: transparent;
+    border: none;
+}
+
+.controls button img{
+    position: relative;
+    height: 50px;
+    width: 100px;
+    transform: translate(0%, -20%);
+}
+
+#canvas1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 900px;
+	height: 690px;
+	border: 6px solid black;
+    box-shadow: 0px 0px 19px 10px rgba(0,0,0,0.6);
+    /*box-shadow: 18px 19px 20px #333;*/
+	/*box-shadow: 1px 1px 0px #999,
+                2px 2px 0px #999,
+                3px 3px 0px #999,
+                4px 4px 0px #999,
+                5px 5px 0px #999,
+                6px 6px 0px #999,
+                7px 7px 0px #999,
+                8px 8px 0px #999,
+                9px 9px 0px #999,
+                10px 10px 0px #999,
+                11px 11px 0px #999,
+                12px 12px 0px #999,
+                13px 13px 0px #999,
+                14px 14px 0px #999,
+                15px 15px 0px #999;*/
+}
+
+.retro button{
+    position: absolute;
+    z-index: 9999999; 
+    border-radius: 50px;
+    padding: 10px;
+    top: 5%;
+    left: 75%;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.retro button:hover{
+    transform: rotate(360deg);
+}
+
+.retro button i{
+    font-size: 25px;
+}

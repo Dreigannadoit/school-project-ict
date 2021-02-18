@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="demo#3" content="Trial#15">
+	<title>(New#3)Flapp Bird Demo#5 Trial#15</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/d5fba335cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="wrapper" id="bg">
+		<div class="bg"></div>
+		<div class="retro">
+			<canvas id="canvas1"></canvas>
+			<button onclick="sampleFunction()"><i class="fas fa-redo-alt"></i></button>
+		</div>
+		<div class="controls" id="intro1">
+			<h3>Press Space Bar to Flap</h3>
+			<br>
+			<button class="img_control"><img src="controls2.png"></button>
+		</div>		
+	</div>
+	<script src="./js/bird.js"></script>
+	<script src="./js/particles.js"></script>
+	<script src="./js/obstacles.js"></script>
+	<script src="./js/main.js"></script>
+	<script type="text/javascript">
+		window.addEventListener('keydown', function(e){
+			console.log(e.code);
+		})
+		console.log(Math.random() * Math.PI);
+
+		(() => {
+		  setTimeout(() => {
+		    document.getElementsByTagName("body")[0].style.backgroundColor = 'transparent';
+		  }, 50)
+		})();
+		function sampleFunction() {
+		  location.reload();
+		}
+	</script>
+
+
+</body>
+</html>
